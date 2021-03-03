@@ -6,7 +6,6 @@ class SearchBar extends React.Component{
     //use arrow function so to fix unset state error
     onFormSubmit = (event) => {
         event.preventDefault();
-        
         this.props.onSubmit(this.state.term);
     }
 
